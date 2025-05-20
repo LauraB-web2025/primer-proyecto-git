@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario The Blackk Rose </title>
+
+     <!-- ÍCONO DE LA PESTAÑA DEL NAVEGADOR -->
+     <!-- FALTA Cambiar la imagen -->
+<link rel="shortcut icon" href="rosa_logo.png">
+</head>
+<body>
+        <!-- ESTO NO SE SI VA O NO -->
+<form action="procesar_form.php" method="post" enctype="text/plain">
+
+</form>
+
+<div>
+    <h1>Pedido personalizado</h1>
+</div>
+
+<!-- Medidas del ancho -->
+<form>
+    <fieldset>
+        <legend>Medidas</legend>
+        <label for="nombre">Ancho de las uñas (medidas en cm) </label>
+        <br><br>
+        <label for="nombre">Pulgar:</label>
+        <input type="text" name="pulgar" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="pulgar" placeholder="Mano Derecha (cm)"/>
+        <br><br>
+        <label for="nombre">Índice:</label>
+        <input type="text" name="índice" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="índice" placeholder="Mano Derecha (cm)"/>
+        <br><br>
+        <label for="nombre">Medio:</label>
+        <input type="text" name="medio" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="medio" placeholder="Mano Derecha (cm)"/>
+        <br><br>
+        <label for="nombre">Anular:</label>
+        <input type="text" name="anular" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="anular" placeholder="Mano Derecha (cm)"/>
+        <br><br>
+        <label for="nombre">Meñique:</label>
+        <input type="text" name="meñique" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="meñique" placeholder="Mano Derecha (cm)"/>
+    </fieldset>
+
+        <!-- Largo -->
+<fieldset>
+    <legend>Largo</legend>
+    <p>Tomar la medida desde la cutícula hasta el borde libre</p>
+    <label for="nombre">Largo uña natural:</label>
+    <input type="text" name="largo" placeholder="Uña natural más larga (cm)">
+    <br><br>
+    <p>Elegí el largo máximo de tu set</p>
+    <select name="largo">
+        <option value="1.5cm">1.5 Cm </option> 
+        <option value="1.5cm">2.0 Cm </option>
+        <option value="1.5cm">2.5 Cm </option>
+        <option value="1.5cm">3.0 Cm </option>
+        <option value="1.5cm">3.5 Cm </option>
+    </select> 
+</fieldset>
+
+        <!-- Foto inspiración -->
+<fieldset>
+    <legend>Foto inspiración</legend>
+    <label for="nombre">Inserte las imágenes de referencia para poder realizar su diseño</label>
+<br><br>
+    <input type="file" id="file" name="file">
+</fieldset>
+
+        <!-- Formato -->
+<fieldset>
+    <legend>Formato</legend>
+    <img src="formatos1.png" alt="Imágen de Formatos" width="400" height="200">
+    <br>
+    <input type="radio" name="formato" value="cuadradas"cheked>
+    <label for="nombre">Cuadradas</label>
+    <br>
+    <input type="radio" name="formato" value="Semi-Cuadradas">
+    <label for="nombre">Semi-Cuadradas</label>
+    <br>
+    <input type="radio" name="formato" value="Redondas">
+    <label for="nombre">Redondas</label>
+    <br>
+    <input type="radio" name="formato" value="Ovaladas">
+    <label for="nombre">Ovaladas</label>
+    <br>
+    <input type="radio" name="formato" value="Almendra">
+    <label for="nombre">Almendra</label>
+    <br>
+    <input type="radio" name="formato" value="Ballerina">
+    <label for="nombre">Ballerina</label>
+    <br>
+    <input type="radio" name="formato" value="Stiletto">
+    <label for="nombre">Stiletto</label>
+</fieldset>
+
+       <!-- Especificaciones del pedido -->
+<fieldset>
+    <legend>Especificaciones de tu pedido</legend>
+    <label for="nombre">Si querés hacer alguna aclaración adicional sobre tu pedido hazla aquí:</label>
+    <input type="text" name="Especificaciones">
+</fieldset>
+       <!-- Importante -->
+<fieldset>
+    <legend>IMPORTANTE</legend> 
+    <p>Completa todos los espacios del formulario.</p>
+    <p>Luego de enviar el formulario comunicate con nosotras a través de 
+    Whatsapp o Instagram para cotizar tu pedido!</p>
+</fieldset>
+<br>
+
+           <!-- Enviar formulario -->
+<input type="submit" value="Enviar"/>
+
+</form>
+</body>
+</html>
