@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario The Blackk Rose </title>
+    <!-- ÍCONO DE LA PESTAÑA DEL NAVEGADOR -->
+<link rel="shortcut icon" href="/img/logo_br.png">
+<!-- EXTERNAL CSS -->
+ <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<form action="procesar_form.php" method="post" enctype="multipart/formdata">
+</form>
+<div>
+    <img src="/img/logo_br.png" alt="Imagen del logo" with="100" height="100">
+    <h1 class="titulo1">Pedido personalizado</h1>
+</div>
+<!-- Medidas del ancho -->
+<form>
+    <fieldset>
+        <legend><h3 class="titulo2">Medidas</h3></legend>
+        <label for="nombre">Ancho de las uñas (medidas en cm) </label>
+        <br><br>
+        <label for="nombre">Pulgar:</label>
+        <input type="text" name="pulgar" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="pulgar" placeholder="Mano Derecha (cm)"/>
+        <br><br>
+        <label for="nombre">Índice:</label>
+        <input type="text" name="índice" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="índice" placeholder="Mano Derecha (cm)"/>
+        <br><br>
+        <label for="nombre">Medio:</label>
+        <input type="text" name="medio" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="medio" placeholder="Mano Derecha (cm)"/>
+        <br><br>
+        <label for="nombre">Anular:</label>
+        <input type="text" name="anular" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="anular" placeholder="Mano Derecha (cm)"/>
+        <br><br>
+        <label for="nombre">Meñique:</label>
+        <input type="text" name="meñique" placeholder="Mano Izquierda (cm)"/>
+        <input type="text" name="meñique" placeholder="Mano Derecha (cm)"/>
+    </fieldset>
+        <!-- Largo -->
+<fieldset>
+    <legend><h3 class="titulo2">Largo</h3></legend>
+    <p>Tomar la medida desde la cutícula hasta el borde libre</p>
+    <label for="nombre">Largo uña natural:</label>
+    <input type="text" name="largo" placeholder="Uña natural más larga (cm)">
+    <br><br>
+    <p>Elegí el largo máximo de tu set</p>
+    <select name="largo">
+        <option value="1.5cm">1.5 Cm </option> 
+        <option value="1.5cm">2.0 Cm </option>
+        <option value="1.5cm">2.5 Cm </option>
+        <option value="1.5cm">3.0 Cm </option>
+        <option value="1.5cm">3.5 Cm </option>
+    </select> 
+</fieldset>
+        <!-- Foto inspiración -->
+<fieldset>
+    <legend><h3 class="titulo2">Foto inspiración</h3></legend>
+    <label for="nombre">Inserte las imágenes de referencia para poder realizar su diseño</label>
+<br><br>
+    <input type="file" id="file" name="file">
+</fieldset>
+        <!-- Formato -->
+<fieldset>
+    <legend><h3 class="titulo2">Formato</h3></legend>
+    <img src="/img/formatos1.png" alt="Imágen de Formatos" width="600" height="300">
+    <br><br>
+    <input type="radio" name="formato" value="cuadrada"cheked>
+    <label for="nombre">Cuadrada</label>
+    <br>
+    <input type="radio" name="formato" value="Redonda">
+    <label for="nombre">Redonda</label>
+    <br>
+    <input type="radio" name="formato" value="Almendra">
+    <label for="nombre">Almendra</label>
+    <br>
+    <input type="radio" name="formato" value="Stiletto">
+    <label for="nombre">Stiletto</label>
+    <br>
+    <input type="radio" name="formato" value="Coffin">
+    <label for="nombre">Coffin</label>
+</fieldset>
+       <!-- Especificaciones del pedido -->
+<fieldset>
+    <legend><h3 class="titulo2">Especificaciones de tu pedido</h3></legend>
+    <label for="nombre">Si querés hacer alguna aclaración adicional sobre tu pedido hazla aquí:</label>
+    <input type="text" name="Especificaciones">
+</fieldset>
+       <!-- Importante -->
+<fieldset>
+    <legend><h3 class="titulo2">IMPORTANTE</h3></legend> 
+    <p>Completa todos los espacios del formulario.</p>
+    <p>Luego de enviar el formulario comunicate con nosotras a través de 
+    Instagram o Whatsapp para cotizar tu pedido!</p>
+    <a href="https://www.instagram.com/the.blackk.rose?igsh=bG8xNWZqcTlzODRh" target="_blank">
+        <img src="/img/ig.png" alt="Instagram" with="50" height="50">
+    </a>
+    <a href="https://wa.me/5491170580750" target="_blank">
+        <img src="/img/wspp.png" alt="WhatsApp" with="50" height="50">
+    </a>
+</fieldset>
+<br>
+           <!-- Enviar formulario -->
+<input type="submit" value="Enviar"/>
+</form>
+</body>
+</html>

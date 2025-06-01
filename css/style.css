@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    margin: 1;
+    box-sizing:border-box
+}
+
+.titulo1 {
+    color:black;
+    margin: 15px;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.titulo2 {
+    color:black;
+    margin: 15px;
+    font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.titulo-centrado {
+text-align: center;
+}
+ul {
+  list-style-position:inside;
+  padding-left: 0;
+  margin: 20px auto;
+  display: table;
+}
+li{
+  text-align:left;
+}
+.titulo3 {
+  list-style-position:inside;
+  padding-left: 0;
+  margin: 20px auto;
+  display: table;
+}
