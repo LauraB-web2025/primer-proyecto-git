@@ -5,7 +5,9 @@
     margin: 1;
     box-sizing:border-box
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .titulo1 {
     color:black;
     margin: 15px;
@@ -49,9 +51,6 @@ background-size: 100% 100%;
 }
 .titulos_ppales {
   color:floralwhite
-}
-.scroll {
-  scroll-behavior: smooth;
 }
 /* FORMULARIO PERSONALIZADO */
 .espacio {
