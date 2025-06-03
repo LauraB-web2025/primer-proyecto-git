@@ -8,6 +8,13 @@
 html {
   scroll-behavior: smooth;
 }
+.titulo2 {
+    color:black;
+    margin: 15px;
+    font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 .titulo1 {
     color:black;
     margin: 15px;
@@ -16,12 +23,8 @@ html {
   font-weight: <weight>;
   font-style: normal;
 }
-.titulo2 {
-    color:black;
-    margin: 15px;
-    font-family: "Aboreto", system-ui;
-  font-weight: 400;
-  font-style: normal;
+.titulos_ppales {
+  color:floralwhite
 }
 .titulo-centrado {
 text-align: center;
@@ -41,22 +44,11 @@ li{
   margin: 20px auto;
   display: table;
 }
-.colorgral {
+.color-base {
   background-color:rgb(41, 40, 40);
   background-size: 100% 100%;
 }
 .fondo {
 background-color: black;
 background-size: 100% 100%;
-}
-.titulos_ppales {
-  color:floralwhite
-}
-/* FORMULARIO PERSONALIZADO */
-.espacio {
-  margin-top: 10px;
-  margin-left: 90px; 
-}
-.espacio2 {
-  margin-left: 15px;
 }
