@@ -7,12 +7,12 @@
     <!-- ÍCONO DE LA PESTAÑA DEL NAVEGADOR -->
     <link rel="shortcut icon" href="/img/logo_br.png">
     <!-- EXTERNAL CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- ver si agrego al div img4/img5 -->
-<div class="color-base scroll titulo-centrado titulo2 image-container> 
+<div class="color-base scroll titulo-centrado titulo2 image-container"> 
     <form action="procesar_form.php" method="post" enctype="multipart/formdata">
         <div class="fondo">
             <br>
@@ -22,53 +22,40 @@
         </div>
         <!-- Medidas del ancho -->
         <fieldset class="box1">
-            <div class="container">
-                <legend><h3 class="titulo2 titulos_ppales">Medidas</h3></legend>
-            <label for="nombre">Ancho de las uñas (medidas en cm) </label>
-                <div class="hijos">
-                    <label for="nombre">Pulgar:</label>
-                    <label for="nombre">Índice:</label>
-                    <label for="nombre">Medio:</label>
-                    <label for="nombre">Anular:</label>
-                    <label for="nombre">Meñique:</label>
-                </div>
-                <div class="hijos">
-                    <input type="text" name="pulgar" placeholder="Mano Izquierda (cm)"/>
-                    <input type="text" name="índice" placeholder="Mano Izquierda (cm)"/>
-                    <input type="text" name="medio" placeholder="Mano Izquierda (cm)"/>
-                    <input type="text" name="anular" placeholder="Mano Izquierda (cm)"/>
-                    <input type="text" name="meñique" placeholder="Mano Izquierda (cm)"/>
-                </div>
-                <div class="hijos">
-                    <input type="text" name="pulgar" placeholder="Mano Derecha (cm)"/>
-                    <input type="text" name="índice" placeholder="Mano Derecha (cm)"/>
-                    <input type="text" name="medio" placeholder="Mano Derecha (cm)"/>
-                    <input type="text" name="anular" placeholder="Mano Derecha (cm)"/>
-                    <input type="text" name="meñique" placeholder="Mano Derecha (cm)"/>
-                </div>
-            
-            
-            
-            
-            
-          
-            
-            
-            
-            
-            
-            
-            
-           
-            
-            
-            
-            
-           
-            
-            
-            </div>
-        </fieldset>
+  <legend><h3 class="titulo2 titulos_ppales">Medidas</h3></legend>
+
+  <div class="medidas-flex">
+     <!-- Columna Etiquetas -->
+    <div class="col-centro">
+      <label>Pulgar:</label>
+      <label>Índice:</label>
+      <label>Medio:</label>
+      <label>Anular:</label>
+      <label>Meñique:</label>
+    </div>
+    
+    <!-- Columna Izquierda -->
+    <div class="col-izq">
+      <input type="text" name="pulgar_izq"  placeholder="Pulgar Izq (cm)"/>
+      <input type="text" name="indice_izq"  placeholder="Índice Izq (cm)"/>
+      <input type="text" name="medio_izq"   placeholder="Medio Izq (cm)"/>
+      <input type="text" name="anular_izq"  placeholder="Anular Izq (cm)"/>
+      <input type="text" name="menique_izq" placeholder="Meñique Izq (cm)"/>
+    </div>
+
+   
+
+    <!-- Columna Derecha -->
+    <div class="col-der">
+      <input type="text" name="pulgar_der"  placeholder="Pulgar Der (cm)"/>
+      <input type="text" name="indice_der"  placeholder="Índice Der (cm)"/>
+      <input type="text" name="medio_der"   placeholder="Medio Der (cm)"/>
+      <input type="text" name="anular_der"  placeholder="Anular Der (cm)"/>
+      <input type="text" name="menique_der" placeholder="Meñique Der (cm)"/>
+    </div>
+  </div>
+</fieldset>
+
         <!-- Largo -->
         <fieldset class="box1">
             <legend><h3 class="titulo2 titulos_ppales">Largo</h3></legend>
@@ -117,7 +104,7 @@
         <fieldset class="box1">
             <legend><h3 class="titulo2 titulos_ppales">Especificaciones de tu pedido</h3></legend>
             <label for="nombre">Si querés hacer alguna aclaración adicional sobre tu pedido hazla aquí:</label>
-            <input type="text" name="Especificaciones">
+            <textarea type="text" name="Especificaciones" rows="10" cols="50">comentario</textarea>
         <br><br>
         </fieldset>
        <!-- Importante -->
