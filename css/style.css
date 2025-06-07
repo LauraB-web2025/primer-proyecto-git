@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script:wght@400..700&display=swap');
 
 *{
-    margin: 1;
+    margin: 0;
+    padding: 0;
     box-sizing:border-box
 }
+/* SCROLL */
 html {
   scroll-behavior: smooth;
 }
+/* TIPOGRAFÍA */
 .titulo2 {
     color:black;
     margin: 15px;
@@ -26,9 +29,11 @@ html {
 .titulos_ppales {
   color:floralwhite
 }
+/* CENTRADO */
 .titulo-centrado {
 text-align: center;
 }
+/* LISTAS */
 ul {
   list-style-position:inside;
   padding-left: 0;
@@ -44,6 +49,7 @@ li{
   margin: 20px auto;
   display: table;
 }
+/* COLOR FONDO */
 .color-base {
   background-color:rgb(41, 40, 40);
   background-size: 100% 100%;
@@ -51,4 +57,58 @@ li{
 .fondo {
 background-color: black;
 background-size: 100% 100%;
+}
+/* MARGEN FOOTER */
+.box1 {
+  margin: 15px;
+}
+/* IMÁGENES RESPONSIVAS */
+.image-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+.img {
+  width: 95%;
+  height: auto;
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2) 
+}
+.img2 {
+  width: 45%;
+  height: auto;
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+/* no lo usé */
+/* .img3 {
+  width: 45%;
+  height: auto;
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2)
+} */
+
+/* FLEXBOX */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 200px;
+}
+
+/* MEDIA QUERIES */
+/* smartphones */
+@media (max-width: 460px) {
+.img4 {
+  width: 90%;
+  height:auto;
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2)
+}
+}
+/* tablets */
+@media (max-width: 768px) {
+.img5 {
+  width: 80%;
+  height:auto;
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2)
+}
 }

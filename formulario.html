@@ -5,120 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Formulario The Blackk Rose </title>
     <!-- ÍCONO DE LA PESTAÑA DEL NAVEGADOR -->
-<link rel="shortcut icon" href="/img/logo_br.png">
-<!-- EXTERNAL CSS -->
- <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="/img/logo_br.png">
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-<div class="color-base scroll titulo-centrado titulo2">
-    <form action="procesar_form.php" method="post" enctype="multipart/formdata">
-    </form>
 
-    <div class="fondo">
-        <br>
-        <img src="/img/logo_br.png" alt="Imagen del logo" with="100" height="100">
-        <h1 class="titulo1 titulos_ppales">Pedido personalizado</h1>
-        <br>
-    </div>
-    <!-- Medidas del ancho -->
-    <form>
-    <fieldset>
-        <legend><h3 class="titulo2 titulos_ppales">Medidas</h3></legend>
-        <label for="nombre">Ancho de las uñas (medidas en cm) </label>
-        <br><br>
-        <label for="nombre">Pulgar:</label>
-        <input type="text" name="pulgar" placeholder="Mano Izquierda (cm)"/>
-        <input type="text" name="pulgar" placeholder="Mano Derecha (cm)"/>
-        <br><br>
-        <label for="nombre">Índice:</label>
-        <input type="text" name="índice" placeholder="Mano Izquierda (cm)"/>
-        <input type="text" name="índice" placeholder="Mano Derecha (cm)"/>
-        <br><br>
-        <label for="nombre">Medio:</label>
-        <input type="text" name="medio" placeholder="Mano Izquierda (cm)"/>
-        <input type="text" name="medio" placeholder="Mano Derecha (cm)"/>
-        <br><br>
-        <label for="nombre">Anular:</label>
-        <input type="text" name="anular" placeholder="Mano Izquierda (cm)"/>
-        <input type="text" name="anular" placeholder="Mano Derecha (cm)"/>
-        <br><br>
-        <label for="nombre">Meñique:</label>
-        <input type="text" name="meñique" placeholder="Mano Izquierda (cm)"/>
-        <input type="text" name="meñique" placeholder="Mano Derecha (cm)"/>
-        <br><br>
-    </fieldset>
-    <br>
+<body>
+    <!-- ver si agrego al div img4/img5 -->
+<div class="color-base scroll titulo-centrado titulo2 image-container> 
+    <form action="procesar_form.php" method="post" enctype="multipart/formdata">
+        <div class="fondo">
+            <br>
+            <img src="/img/logo_br.png" alt="Imagen del logo" width="100" height="100">
+            <h1 class="titulo1 titulos_ppales">Pedido personalizado</h1>
+            <br>
+        </div>
+        <!-- Medidas del ancho -->
+        <fieldset class="box1">
+            <legend><h3 class="titulo2 titulos_ppales">Medidas</h3></legend>
+            <label for="nombre">Ancho de las uñas (medidas en cm) </label>
+            <br><br>
+            <div>
+            <label for="nombre">Pulgar:</label>
+            <input type="text" name="pulgar" placeholder="Mano Izquierda (cm)"/>
+            <input type="text" name="pulgar" placeholder="Mano Derecha (cm)"/>
+            <br><br>
+            <label for="nombre">Índice:</label>
+            <input type="text" name="índice" placeholder="Mano Izquierda (cm)"/>
+            <input type="text" name="índice" placeholder="Mano Derecha (cm)"/>
+            <br><br>
+            <label for="nombre">Medio:</label>
+            <input type="text" name="medio" placeholder="Mano Izquierda (cm)"/>
+            <input type="text" name="medio" placeholder="Mano Derecha (cm)"/>
+            <br><br>
+            <label for="nombre">Anular:</label>
+            <input type="text" name="anular" placeholder="Mano Izquierda (cm)"/>
+            <input type="text" name="anular" placeholder="Mano Derecha (cm)"/>
+            <br><br>
+            <label for="nombre">Meñique:</label>
+            <input type="text" name="meñique" placeholder="Mano Izquierda (cm)"/>
+            <input type="text" name="meñique" placeholder="Mano Derecha (cm)"/>
+            <br><br>
+            </div>
+        </fieldset>
         <!-- Largo -->
-    <fieldset>
-    <legend><h3 class="titulo2 titulos_ppales">Largo</h3></legend>
-    <h5>Tomar la medida desde la cutícula hasta el borde libre</h5>
-    <label for="nombre">Largo uña natural:</label>
-    <input type="text" name="largo" placeholder="Uña natural más larga (cm)">
-    <br><br>
-    <h5>Elegí el largo máximo de tu set</h5>
-    <select name="largo">
-        <option value="1.5cm">1.5 Cm </option> 
-        <option value="1.5cm">2.0 Cm </option>
-        <option value="1.5cm">2.5 Cm </option>
-        <option value="1.5cm">3.0 Cm </option>
-        <option value="1.5cm">3.5 Cm </option>
-    </select>
-    <br><br>
-    </fieldset>
-    <br>
+        <fieldset class="box1">
+            <legend><h3 class="titulo2 titulos_ppales">Largo</h3></legend>
+            <h5>Tomar la medida desde la cutícula hasta el borde libre</h5>
+            <br>
+            <label for="nombre">Largo uña natural:</label>
+            <input type="text" name="largo" placeholder="Uña natural más larga (cm)">
+            <br><br>
+            <h5>Elegí el largo máximo de tu set</h5>
+            <br>
+            <select name="largo">
+                <option value="1.5cm">1.5 Cm </option> 
+                <option value="1.5cm">2.0 Cm </option>
+                <option value="1.5cm">2.5 Cm </option>
+                <option value="1.5cm">3.0 Cm </option>
+                <option value="1.5cm">3.5 Cm </option>
+            </select>
+            <br><br>
+        </fieldset>
         <!-- Foto inspiración -->
-    <fieldset>
-    <legend><h3 class="titulo2 titulos_ppales">Foto inspiración</h3></legend>
-    <label for="nombre">Inserte las imágenes de referencia para poder realizar su diseño</label>
-    <br><br>
-    <input type="file" id="file" name="file">
-    <br><br>
-    </fieldset>
-    <br>
+        <fieldset class="box1">
+            <legend><h3 class="titulo2 titulos_ppales">Foto inspiración</h3></legend>
+            <label for="nombre">Inserte las imágenes de referencia para poder realizar su diseño</label>
+            <br><br>
+            <input type="file" id="file" name="file">
+            <br><br>
+        </fieldset>
         <!-- Formato -->
-    <fieldset>
-    <legend><h3 class="titulo2 titulos_ppales">Formato</h3></legend>
-    <img src="/img/formatos1.png" alt="Imágen de Formatos" width="600" height="300">
-    <br><br>
-        <input type="radio" name="formato" value="cuadrada"cheked>
-        <label for="nombre">Cuadrada</label>
-        <input type="radio" name="formato" value="Redonda">
-        <label for="nombre">Redonda</label>
-        <input type="radio" name="formato" value="Almendra">
-        <label for="nombre">Almendra</label>
-        <input type="radio" name="formato" value="Stiletto">
-        <label for="nombre">Stiletto</label>
-        <input type="radio" name="formato" value="Coffin">
-        <label for="nombre">Coffin</label>
+        <fieldset class="box1">
+            <legend><h3 class="titulo2 titulos_ppales">Formato</h3></legend>
+            <img src="/img/formatos1.png" alt="Imágen de Formatos" width="550" height="300" class=img4 class="img5">
         <br><br>
-    </fieldset>
-    <br>
-       <!-- Especificaciones del pedido -->
-    <fieldset>
-    <legend><h3 class="titulo2 titulos_ppales">Especificaciones de tu pedido</h3></legend>
-    <label for="nombre">Si querés hacer alguna aclaración adicional sobre tu pedido hazla aquí:</label>
-    <input type="text" name="Especificaciones">
-    <br><br>
-    </fieldset>
-    <br>
+            <input type="radio" name="formato" value="cuadrada"cheked>
+            <label for="nombre">Cuadrada</label>
+            <input type="radio" name="formato" value="Redonda">
+            <label for="nombre">Redonda</label>
+            <input type="radio" name="formato" value="Almendra">
+            <label for="nombre">Almendra</label>
+            <input type="radio" name="formato" value="Stiletto">
+            <label for="nombre">Stiletto</label>
+            <input type="radio" name="formato" value="Coffin">
+            <label for="nombre">Coffin</label>
+        <br><br>
+        </fieldset>
+        <!-- Especificaciones del pedido -->
+        <fieldset class="box1">
+            <legend><h3 class="titulo2 titulos_ppales">Especificaciones de tu pedido</h3></legend>
+            <label for="nombre">Si querés hacer alguna aclaración adicional sobre tu pedido hazla aquí:</label>
+            <input type="text" name="Especificaciones">
+        <br><br>
+        </fieldset>
        <!-- Importante -->
-    <fieldset>
-    <legend><h3 class="titulo2 titulos_ppales">IMPORTANTE</h3></legend> 
-    <h5>Completa todos los espacios del formulario.</h5>
-    <h5>Luego de enviar el formulario comunicate con nosotras a través de 
-    Instagram o Whatsapp para cotizar tu pedido!</h5>
-    <a href="https://www.instagram.com/the.blackk.rose?igsh=bG8xNWZqcTlzODRh" target="_blank">
-        <img src="/img/ig.png" alt="Instagram" with="50" height="50">
-    </a>
-    <a href="https://wa.me/5491170580750" target="_blank">
-        <img src="/img/wspp.png" alt="WhatsApp" with="50" height="50">
-    </a>
-    <br><br>
-    </fieldset>
-    <br>
+        <fieldset class="box1">
+            <legend><h3 class="titulo2 titulos_ppales">IMPORTANTE</h3></legend> 
+            <h5>Completa todos los espacios del formulario.</h5>
+            <br>
+            <h5>Luego de enviar el formulario comunicate con nosotras a través de 
+                Instagram o Whatsapp para cotizar tu pedido!</h5>
+            <br>
+            <a href="https://www.instagram.com/the.blackk.rose?igsh=bG8xNWZqcTlzODRh" target="_blank">
+                <img src="/img/ig.png" alt="Instagram" width="50" height="50">
+            </a>
+            <a href="https://wa.me/5491170580750" target="_blank">
+                <img src="/img/wspp.png" alt="WhatsApp" width="50" height="50">
+            </a>
+            <br><br>
+        </fieldset>
            <!-- Enviar formulario -->
-    <input type="submit" value="Enviar"/>
-    <br><br>
+        <input type="submit" value="Enviar"/>
+        <br><br><br>
     </form>
 </div>
 </body>
