@@ -22,39 +22,39 @@
         </div>
         <!-- Medidas del ancho -->
         <fieldset class="box1">
-  <legend><h3 class="titulo2 titulos_ppales">Medidas</h3></legend>
+        <legend><h3 class="titulo2 titulos_ppales">Medidas</h3></legend>
+        <label for="nombre">Ancho de las uñas (medidas en cm) </label>
 
-  <div class="medidas-flex">
-     <!-- Columna Etiquetas -->
-    <div class="col-centro">
-      <label>Pulgar:</label>
-      <label>Índice:</label>
-      <label>Medio:</label>
-      <label>Anular:</label>
-      <label>Meñique:</label>
-    </div>
+        <div class="medidas-flex">
+        <!-- Columna Etiquetas -->
+        <div class="grupo-izq">
+        <div class="col-centro">
+            <label>Pulgar:</label>
+            <label>Índice:</label>
+            <label>Medio:</label>
+            <label>Anular:</label>
+            <label>Meñique:</label>
+        </div>
     
-    <!-- Columna Izquierda -->
-    <div class="col-izq">
-      <input type="text" name="pulgar_izq"  placeholder="Pulgar Izq (cm)"/>
-      <input type="text" name="indice_izq"  placeholder="Índice Izq (cm)"/>
-      <input type="text" name="medio_izq"   placeholder="Medio Izq (cm)"/>
-      <input type="text" name="anular_izq"  placeholder="Anular Izq (cm)"/>
-      <input type="text" name="menique_izq" placeholder="Meñique Izq (cm)"/>
-    </div>
-
-   
-
-    <!-- Columna Derecha -->
-    <div class="col-der">
-      <input type="text" name="pulgar_der"  placeholder="Pulgar Der (cm)"/>
-      <input type="text" name="indice_der"  placeholder="Índice Der (cm)"/>
-      <input type="text" name="medio_der"   placeholder="Medio Der (cm)"/>
-      <input type="text" name="anular_der"  placeholder="Anular Der (cm)"/>
-      <input type="text" name="menique_der" placeholder="Meñique Der (cm)"/>
-    </div>
-  </div>
-</fieldset>
+        <!-- Columna Izquierda -->
+        <div class="col-izq">
+            <input type="text" name="pulgar_izq"  placeholder="Pulgar Izq (cm)"/>
+            <input type="text" name="indice_izq"  placeholder="Índice Izq (cm)"/>
+            <input type="text" name="medio_izq"   placeholder="Medio Izq (cm)"/>
+            <input type="text" name="anular_izq"  placeholder="Anular Izq (cm)"/>
+            <input type="text" name="menique_izq" placeholder="Meñique Izq (cm)"/>
+        </div>
+        </div>
+        <!-- Columna Derecha -->
+        <div class="col-der">
+            <input type="text" name="pulgar_der"  placeholder="Pulgar Der (cm)"/>
+            <input type="text" name="indice_der"  placeholder="Índice Der (cm)"/>
+            <input type="text" name="medio_der"   placeholder="Medio Der (cm)"/>
+            <input type="text" name="anular_der"  placeholder="Anular Der (cm)"/>
+            <input type="text" name="menique_der" placeholder="Meñique Der (cm)"/>
+        </div>
+        </div>
+        </fieldset>
 
         <!-- Largo -->
         <fieldset class="box1">
@@ -73,7 +73,6 @@
                 <option value="1.5cm">3.0 Cm </option>
                 <option value="1.5cm">3.5 Cm </option>
             </select>
-            <br><br>
         </fieldset>
         <!-- Foto inspiración -->
         <fieldset class="box1">
@@ -81,7 +80,6 @@
             <label for="nombre">Inserte las imágenes de referencia para poder realizar su diseño</label>
             <br><br>
             <input type="file" id="file" name="file">
-            <br><br>
         </fieldset>
         <!-- Formato -->
         <fieldset class="box1">
@@ -98,14 +96,12 @@
             <label for="nombre">Stiletto</label>
             <input type="radio" name="formato" value="Coffin">
             <label for="nombre">Coffin</label>
-        <br><br>
         </fieldset>
         <!-- Especificaciones del pedido -->
         <fieldset class="box1">
             <legend><h3 class="titulo2 titulos_ppales">Especificaciones de tu pedido</h3></legend>
             <label for="nombre">Si querés hacer alguna aclaración adicional sobre tu pedido hazla aquí:</label>
-            <textarea type="text" name="Especificaciones" rows="10" cols="50">comentario</textarea>
-        <br><br>
+            <textarea type="text" name="Especificaciones" rows="1" cols="20">.</textarea>
         </fieldset>
        <!-- Importante -->
         <fieldset class="box1">
@@ -121,7 +117,6 @@
             <a href="https://wa.me/5491170580750" target="_blank">
                 <img src="/img/wspp.png" alt="WhatsApp" width="50" height="50">
             </a>
-            <br><br>
         </fieldset>
            <!-- Enviar formulario -->
         <input type="submit" value="Enviar"/>
