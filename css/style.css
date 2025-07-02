@@ -79,14 +79,6 @@ li {
   height: auto;
   box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* no lo usé */
-/* .img3 {
-  width: 45%;
-  height: auto;
-  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2)
-} */
-
 /* FLEXBOX */
 .medidas-flex {
   display: flex;
@@ -117,6 +109,98 @@ li {
   align-items: flex-start;
   gap: 1.5rem;
 }
+/* CARRUSEL CENTRADO */
+.carousel-image { /* Or whatever class/ID your images have */
+  display: block; /* Important: images are inline by default */
+  width: 50%; /* Or your desired width */
+  margin-left: auto;
+  margin-right: auto;
+  /* Shorthand: margin: 0 auto; if you don't need top/bottom margin */
+}
+/* BUSCADOR ROJO */
+/* Para el input del buscador */
+.form-control:focus {
+    border-color: #dc3545; /* Rojo de Bootstrap (danger)*/
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25); /* Sombra roja con opacidad */
+    outline: 0; /* Asegura que no haya un outline adicional si el navegador lo añade */
+}
+/* Efecto de contorno azul del botón al enfocarlo*/
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25); /* Sombra roja con opacidad */
+    outline: 0; /* Elimina cualquier outline predeterminado del navegador */
+}
+/* Foco del botón también en rojo */
+.btn.titulos_ppales:focus {
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25); /* Sombra roja con opacidad */
+    outline: 0; /* Elimina cualquier outline predeterminado del navegador */
+}
+/* menú a la izquierda del nav */
+.mi-menu-navbar {
+    margin-left: 15px;
+  }
+
+/* RADIO BUTTONS ROJO FORMULARIO */
+/* . Oculta el radio button nativo */
+.custom-radio-label input[type="radio"] {
+    /* Oculta visualmente el input, pero lo mantiene accesible para screen readers */
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none; /* Asegura que no interfiera con los clics */
+}
+/* . Estiliza el "círculo exterior" del radio button personalizado */
+.custom-radio-label span {
+    position: relative; /* Importante para posicionar el punto interior */
+    padding-left: 25px; /* Espacio para el círculo personalizado */
+    cursor: pointer;
+    display: inline-block; /* Para que el padding y posicionamiento funcionen bien */
+    line-height: 1.5; /* Ajusta la altura de línea si es necesario */
+    vertical-align: middle; /* Alinea con el texto adyacente */
+}
+/* Crea el círculo exterior (el que normalmente es gris o blanco) */
+.custom-radio-label span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    width: 18px; /* Tamaño del círculo exterior */
+    height: 18px; /* Tamaño del círculo exterior */
+    border: 2px solid #ccc; /* Borde gris claro por defecto */
+    border-radius: 50%; /* Hace que sea un círculo */
+    background-color: #fff; /* Fondo blanco */
+    transition: all 0.2s ease-in-out; /* Animación suave al cambiar de estado */
+}
+/* . Estiliza el "punto interior" rojo cuando el radio button está checked */
+.custom-radio-label span::after {
+    content: '';
+    position: absolute;
+    left: 4px; /* Posiciona el punto interior dentro del círculo exterior */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px; /* Tamaño del punto interior */
+    height: 12px; /* Tamaño del punto interior */
+    border-radius: 50%; /* Hace que sea un círculo */
+    background-color: red; /* ¡EL COLOR ROJO! */
+    opacity: 0; /* Por defecto, el punto interior está oculto */
+    transition: all 0.2s ease-in-out; /* Animación suave al aparecer/desaparecer */
+}
+/* . Muestra el punto interior cuando el radio button está checked */
+.custom-radio-label input[type="radio"]:checked + span::after {
+    opacity: 1; /* Hace visible el punto interior */
+}
+/* Cambia el borde del círculo exterior al estar checked (para un efecto más completo) */
+.custom-radio-label input[type="radio"]:checked + span::before {
+    border-color: red; /* El borde del círculo exterior también se vuelve rojo */
+    background-color: #fcebeb; /* Un fondo muy ligero para el círculo exterior checked */
+}
+/* Efecto de foco para accesibilidad (simula el outline azul) */
+.custom-radio-label input[type="radio"]:focus + span::before {
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25); /* Sombra roja de enfoque */
+    border-color: red; /* Borde rojo al enfocar */
+}
+
 /* MEDIA QUERIES */
 /* smartphones */
 @media (max-width: 460px) {
@@ -133,4 +217,18 @@ li {
     height: auto;
     box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);
   }
+}
+/* pantallas gdes */
+@media (min-width: 992px) {
+    .mi-menu-navbar {
+        margin-left: 15px;
+    }
+}
+/* Media Query para pantallas pequeñas (hasta 991.98px de ancho) */
+@media (max-width: 991.98px) {
+    .navbar {
+        background-color: #524f4f !important; 
+        /* Es crucial usar !important en este caso porque las clases de fondo de Bootstrap (bg-dark) 
+        tienen una alta especificidad y se necesita sobrescribirlas. */
+    }
 }
